@@ -28,5 +28,6 @@ if __name__ == '__main__':
                     write_text_to_file('cracked', private_hex)
                     write_text_to_file('cracked', private_wif)
                     write_text_to_file('cracked', public_address)
+                    print('Private key found')
     else:
         print('Whole blockchain checked ^_^')
