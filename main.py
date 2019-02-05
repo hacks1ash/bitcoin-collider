@@ -1,3 +1,8 @@
+__author__ = "MiGle Gurushidze"
+__copyright__ = "Copyright (C) 2004 MiGle Gurushidze"
+__license__ = "Public Domain"
+__version__ = "1.0"
+
 from parse import parse_bitcoin_addresses
 from generations import generate_public_address, generate_private_wif
 from utils import read_text_from_file, write_text_to_file
@@ -6,7 +11,9 @@ import itertools
 HEX_CHARS = '0123456789ABCDEF'
 
 if __name__ == '__main__':
-    print('Getting 1000 the richest addresses')
+    copyright()
+    print(f'\n******** Made by {__author__} ********\n')
+    print('**** Getting 1000 the richest addresses ****')
     parse_bitcoin_addresses(100)
     final_bitcoin_list = list()
     text_content = read_text_from_file('bitcoin_addresses')
@@ -14,7 +21,7 @@ if __name__ == '__main__':
         text_content[index] = text_content[index].rstrip('\n')
         final_bitcoin_list.append(text_content[index])
 
-    print('Starting checking addresses')
+    print('**** Starting checking addresses ****')
 
     for n in range(64, 65):
         for xs in itertools.product(HEX_CHARS, repeat=n):
@@ -29,4 +36,4 @@ if __name__ == '__main__':
                     write_text_to_file('cracked', public_address)
                     print('Private key found')
     else:
-        print('Whole blockchain checked ^_^')
+        print('**** Whole blockchain checked ^_^ ****')
