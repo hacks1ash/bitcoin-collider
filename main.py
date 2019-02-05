@@ -4,7 +4,6 @@ from utils import read_text_from_file, write_text_to_file
 import itertools
 
 HEX_CHARS = '0123456789ABCDEF'
-PRIVATE_HEX = '0000000000000000000000000000000000000000000000000000000000000001'
 
 if __name__ == '__main__':
     print('Getting 1000 the richest addresses')
