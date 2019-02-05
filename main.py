@@ -1,5 +1,5 @@
 __author__ = "MiGle Gurushidze"
-__copyright__ = "Copyright (C) 2004 MiGle Gurushidze"
+__copyright__ = "Copyright (C) 2019 MiGle Gurushidze"
 __license__ = "Public Domain"
 __version__ = "1.0"
 
