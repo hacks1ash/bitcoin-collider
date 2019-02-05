@@ -11,7 +11,6 @@ import itertools
 HEX_CHARS = '0123456789ABCDEF'
 
 if __name__ == '__main__':
-    copyright()
     print(f'\n******** Made by {__author__} ********\n')
     print('**** Getting 1000 the richest addresses ****')
     parse_bitcoin_addresses(100)
