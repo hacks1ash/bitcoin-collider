@@ -30,9 +30,7 @@ if __name__ == '__main__':
                 public_address = generate_public_address(private_hex)
                 if public_address in final_bitcoin_list:
                     private_wif = generate_private_wif(private_hex)
-                    write_text_to_file('cracked', private_hex)
-                    write_text_to_file('cracked', private_wif)
-                    write_text_to_file('cracked', public_address)
+                    write_text_to_file('cracked', f'{private_hex} {private_wif} {public_address}')=
                     print('Private key found')
     else:
         print('**** Whole blockchain checked ^_^ ****')
